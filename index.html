@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Star Wars RPG</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+</head>
+
+<body>
+    <div class="main-section-title">Star Wars RPG</div>
+    <div id="main-game-section">
+        <div id="character-section">
+            <div class="section title">Choose a Character!</div>
+            <div id="character-area">
+                <div class="character" data-name="padme">
+                    <div class="character-name">Princess Padme</div>
+                    <img class="character-image" alt="character" src="assets/images/padme.jpg">
+                    <div class="character-health">120</div>
+                </div>
+                <div class="character" data-name="lukeSkyWalker">
+                    <div class="character-name">Luke Skywalker</div>
+                    <img class="character-image" alt="character" src="assets/images/luke.jpg">
+                    <div class="character-health">120</div>
+                </div>
+                <div class="character" data-name="emporerPalpatine">
+                    <div class="character-name">Emporer Palpatine</div>
+                    <img class="character-image" alt="character" src="assets/images/emporer.png">
+                    <div class="character-health">150</div>
+                </div>
+                <div class="character" data-name="rtwoDtwo">
+                    <div class="character-name">R2D2</div>
+                    <img class="character-image" alt="character" src="assets/images/r2d2.jpg">
+                    <div class="character-health">100</div>
+                </div>
+                <div id="selected-character-section">
+                    <div class="section-title">Your Character</div>
+                    <div id="selected-character"></div>
+                </div>
+                <div id="available-to-attack-section">
+                    <div class="section-title">Enemies Available to Attack</div>
+                </div>
+                <div class="section-title">Fight Section</div>
+                <div id="fight-section">
+                    <button id="attack-button" style="display: none;">Attack</button>
+                </div>
+                <div id="action">
+                    <div class="character-section">
+                        <div class="section-title">Defender</div>
+                        <div id="defender"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="game-message"></div>
+            <button id="reset-button" style="display: none;">Reset Game</button>
+</body>
+
+</html>
